@@ -1,7 +1,7 @@
 
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Mesh } from 'three';
+import { Group } from 'three';
 import { Skin } from '@/types/skin';
 
 interface BusModelProps {
@@ -9,7 +9,7 @@ interface BusModelProps {
 }
 
 export const BusModel: React.FC<BusModelProps> = ({ selectedSkin }) => {
-  const busRef = useRef<Mesh>(null);
+  const busRef = useRef<Group>(null);
 
   useFrame((state) => {
     if (busRef.current) {
