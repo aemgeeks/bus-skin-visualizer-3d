@@ -3,6 +3,14 @@ import { Skin } from '@/types/skin';
 
 export const skins: Skin[] = [
   {
+    id: 'rainbow-express',
+    name: 'Rainbow Express',
+    description: 'Vibrant rainbow design with flowing stripes',
+    color: '#FFFFFF',
+    accentColor: '#22C55E',
+    category: 'Featured'
+  },
+  {
     id: 'classic-red',
     name: 'Classic Red',
     description: 'Traditional red city bus design',
@@ -57,13 +65,5 @@ export const skins: Skin[] = [
     color: '#F8FAFC',
     accentColor: '#E2E8F0',
     category: 'Classic'
-  },
-  {
-    id: 'neon-pink',
-    name: 'Neon Pink',
-    description: 'Eye-catching pink with modern flair',
-    color: '#EC4899',
-    accentColor: '#BE185D',
-    category: 'Vibrant'
   }
 ];
